@@ -1,10 +1,10 @@
 <template>
-
+    Home
 </template>
 
 <script>
 
-</script>
+</script setup>
 
 <style>
 
