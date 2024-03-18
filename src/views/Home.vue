@@ -2,10 +2,6 @@
     Home
 </template>
 
-<script>
+<script setup>
 
-</script setup>
-
-<style>
-
-</style>
+</script>
