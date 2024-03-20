@@ -9,4 +9,6 @@ const store = createStore({
     actions,
     mutations,
     getters,
-})
+});
+
+export default store;
