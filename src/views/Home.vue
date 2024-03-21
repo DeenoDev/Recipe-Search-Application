@@ -15,10 +15,16 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed, onMounted } from 'vue';
 import store from '../store';
+import axiosClient from '../store';
 
 
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
+
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("../axiosClient.js");
+
+onMounted(() => {
+  axiosClient.get('/list.php?i=list')
+});
 
 </script>
