@@ -5,6 +5,19 @@
       <router-link :to="{name: 'home'}"> 
         Home
       </router-link>
+      <!-- try using UL tag for this section when tutorial is completed -->
+      <div>
+        <router-link to="/">
+        Search Meals
+        </router-link>
+        <router-link to="/">
+          Meals By Letter
+        </router-link>
+        <router-link to="/">
+          Meals By Ingredients
+        </router-link>
+
+      </div>
 
     </header>
     <main>
