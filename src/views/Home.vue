@@ -17,15 +17,15 @@
 <script setup>
 import { computed, onMounted } from 'vue';
 import store from '../store';
-import axiosClient from '../store';
+import axiosClient from '../axiosClient.js';
 
 
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 
 onMounted( async() => {
-  const response = await axiosClient.get('/list.php?i=list')
-  console.log(response.data)
+  const response = await axiosClient.get('/list.php?i=list');
+  console.log(response.data);
 });
 
 </script>
