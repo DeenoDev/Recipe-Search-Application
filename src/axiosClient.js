@@ -1,5 +1,5 @@
-const instance = axios.create({
-    baseURL: 'https://some-domain.com/api/',
-    timeout: 1000,
-    headers: {'X-Custom-Header': 'foobar'}
+const axiosClient = axios.create({
+    baseURL: 'www.themealdb.com/api/json/v1/1/',
   });
+
+  export default axiosClient;
