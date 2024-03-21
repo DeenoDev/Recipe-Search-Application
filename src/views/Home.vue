@@ -2,7 +2,7 @@
     <div class="flex flex-col p-8">
         <input type="text" class="rounded border-2 border-gray-200 w-full" placeholder="Search for Meals">
 
-        <div class="flex gap-1">
+        <div class="flex gap-4 justify-center mt-2">
             <router-link to="/" v-for="letter of letters">
                 {{ letter }}
 
