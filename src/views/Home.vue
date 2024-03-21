@@ -21,10 +21,11 @@ import axiosClient from '../store';
 
 
 
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("../axiosClient.js");
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 
-onMounted(() => {
-  axiosClient.get('/list.php?i=list')
+onMounted( async() => {
+  const response = await axiosClient.get('/list.php?i=list')
+  console.log(response.data)
 });
 
 </script>
