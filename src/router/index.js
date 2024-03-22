@@ -7,25 +7,33 @@ import MealsByName from '../views/MealsByName.vue';
 
 const routes = [
     {
-    path: "/",
-    name: "home",
-    component: Home,
+        path: '/',
+        component: DefaultLayout,
+        children: [
+            {
+                path: "/",
+                name: "home",
+                component: Home,
+                },
+                {
+                path: "/by-name:name?",
+                name: "byName",
+                component: MealsByName,
+                },
+                {
+                path: "/by-letter:letter?",
+                name: "byLetter",
+                component: MealsByLetter,
+                },
+                {
+                path: "/by-ingredient:ingredient?",
+                name: "byIngredient",
+                component: MealsByIngredient,
+                },
+
+        ]
     },
-    {
-    path: "/by-name:name?",
-    name: "byName",
-    component: MealsByName,
-    },
-    {
-    path: "/by-letter:letter?",
-    name: "byLetter",
-    component: MealsByLetter,
-    },
-    {
-    path: "/by-ingredient:ingredient?",
-    name: "byIngredient",
-    component: MealsByIngredient,
-    },
+    
 ];
 
 
