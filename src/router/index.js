@@ -12,27 +12,20 @@ const routes = [
     component: Home,
     },
     {
-    path: "/by-name:name",
+    path: "/by-name:name?",
     name: "byName",
     component: MealsByName,
     },
     {
-    path: "/by-name:letter",
+    path: "/by-name:letter?",
     name: "byLetter",
     component: MealsByLetter,
     },
     {
-    path: "/by-name:ingredient",
+    path: "/by-name:ingredient?",
     name: "byIngredient",
     component: MealsByIngredient,
     },
-    
-    {
-    path: "/letter/:letter",
-    name: "byLetter",
-    component: MealList,
-    },
-
 ];
 
 
