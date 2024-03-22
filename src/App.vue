@@ -2,7 +2,7 @@
 <template>
   <div class="bg-gray-100 h-full">
     <header class="bg-white shadow h-16 flex justify-between items-stretch">
-      <router-link :to="{name: 'home'}"> 
+      <router-link :to="{name: 'home'}" class="inline-flex items-center h-full px-5"> 
         Home
       </router-link>
       <!-- try using UL tag for this section when tutorial is completed -->
