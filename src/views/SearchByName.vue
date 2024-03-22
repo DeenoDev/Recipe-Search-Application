@@ -1,6 +1,6 @@
 <template>
     <div>
-        Meal List
+        By Name
     </div>
 
 </template>
