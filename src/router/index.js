@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import DefaultLayout from '../components/DefaultLayout.vue'
+import DefaultLayout from '../components/DefaultLayout.vue';
+import GuestLayout from '../components/GuestLayout.vue';
 import Home from '../views/Home.vue';
 import MealsByIngredient from '../views/MealsByIngredient.vue';
 import MealsByLetter from '../views/MealsByLetter.vue';
@@ -31,9 +32,13 @@ const routes = [
                 name: "byIngredient",
                 component: MealsByIngredient,
                 },
-
-        ]
+        ],
     },
+    {
+      path: '/guest',
+      component: GuestLayout,
+      
+    }
     
 ];
 
