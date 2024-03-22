@@ -17,12 +17,12 @@ const routes = [
     component: MealsByName,
     },
     {
-    path: "/by-name:letter?",
+    path: "/by-letter:letter?",
     name: "byLetter",
     component: MealsByLetter,
     },
     {
-    path: "/by-name:ingredient?",
+    path: "/by-ingredient:ingredient?",
     name: "byIngredient",
     component: MealsByIngredient,
     },
