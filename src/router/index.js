@@ -37,14 +37,8 @@ const routes = [
     {
         path: '/guest',
         component: GuestLayout,
-        children: [
-        {
-            path: "/by-name/:name?",
-            name: "byName",
-            component: MealsByName,
-        },
-       ]
     },
+
 ];
 
 
