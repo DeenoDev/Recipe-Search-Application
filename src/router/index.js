@@ -16,30 +16,35 @@ const routes = [
                 path: "/",
                 name: "home",
                 component: Home,
-                },
-                {
+            },
+            {
                 path: "/by-name:name?",
                 name: "byName",
                 component: MealsByName,
-                },
-                {
+            },
+            {
                 path: "/by-letter:letter?",
                 name: "byLetter",
                 component: MealsByLetter,
-                },
-                {
+            },
+            {
                 path: "/by-ingredient:ingredient?",
                 name: "byIngredient",
                 component: MealsByIngredient,
-                },
+            },
         ],
     },
     {
-      path: '/guest',
-      component: GuestLayout,
-      
+        path: '/guest',
+        component: GuestLayout,
+        children: {
+            path: "/by-name/:name?",
+            name: "byName",
+            component: MealsByName,
+        }
+
     }
-    
+
 ];
 
 
