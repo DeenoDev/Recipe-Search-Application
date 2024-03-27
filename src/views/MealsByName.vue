@@ -19,7 +19,7 @@ import store from '../store';
 const keyword = ref('');
 
 function searchMeals(){
-  axiosClient.get(`search.php?s=${keyword.value}`)
+  store.dispatch('searchMeals', keyword.value)
 
 }
 
