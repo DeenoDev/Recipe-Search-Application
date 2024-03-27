@@ -16,6 +16,7 @@ import { ref } from 'vue';
 
 const keyword = ref('');
 function searchMeals(){
+  axiosClient.get(`search.php?s=${keyword.value}`)
 
 }
 
