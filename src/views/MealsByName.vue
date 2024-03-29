@@ -15,6 +15,7 @@
         <h3>{{ meal.strMeal }}</h3>
         <div>
           <a :href="meal.strYoutube" target="_blank">Youtube</a>
+          <router-link :href="meal.strYoutube" target="_blank">View</router-link>
         </div>
         </div>
     </div>
