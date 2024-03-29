@@ -10,7 +10,7 @@
     </div>
 
     <div>
-        <pre>{{ meals }}</pre>
+        <div v-for="meal of meals" key:meal.idMeal></div>
     </div>
 
 </template>
