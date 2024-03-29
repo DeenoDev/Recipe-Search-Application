@@ -10,7 +10,9 @@
     </div>
 
     <div>
-        <div v-for="meal of meals" key:meal.idMeal></div>
+        <div v-for="meal of meals" :key="meal.idMeal">
+        <img :src="meal.strMealThumb" alt="">
+        </div>
     </div>
 
 </template>
