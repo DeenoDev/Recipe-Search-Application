@@ -11,7 +11,11 @@
 
     <div>
         <div v-for="meal of meals" :key="meal.idMeal">
-        <img :src="meal.strMealThumb" alt="">
+        <img :src="meal.strMealThumb" alt="strMeal">
+        <h3>{{ meal.strMeal }}</h3>
+        <div>
+          <a :href="meal.strYoutube" target="_blank">Youtube</a>
+        </div>
         </div>
     </div>
 
