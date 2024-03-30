@@ -5,7 +5,7 @@
         v-model="keyword"
         class="rounded border-2 border-gray-200 w-full" 
         placeholder="Search for Meals"
-        @change="searchMeals()"
+        @change="searchMeals"
        />   
     </div>
 
@@ -14,8 +14,8 @@
         <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
         <h3 class="px-3 py-3 font-semibold">{{ meal.strMeal }}</h3>
         <div class="px-3 py-3">
-          <a :href="meal.strYoutube" target="_blank">Youtube</a>
-          <router-link to="/">View</router-link>
+          <a :href="meal.strYoutube" target="_blank">Youtube </a>
+          <router-link to="/"> View</router-link>
         </div>
         </div>
     </div>
@@ -32,7 +32,6 @@ const meals = computed(() => store.state.searchedMeals);
 
 function searchMeals(){
   store.dispatch('searchMeals', keyword.value);
-
 }
 
 </script>
