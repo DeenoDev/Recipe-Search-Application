@@ -12,8 +12,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
         <div v-for="meal of meals" :key="meal.idMeal" class="bg-white shadow rounded-xl">
         <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
-        <div class="px-3 ">
-          <h3 class="px-3 py-3 font-semibold">{{ meal.strMeal }}</h3>
+        <div class="p-3 ">
+          <h3 class="font-semibold">{{ meal.strMeal }}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
           <div class="px-3 py-3">
             <a :href="meal.strYoutube" target="_blank">Youtube </a>
