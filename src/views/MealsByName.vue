@@ -14,9 +14,9 @@
         <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-3 ">
           <h3 class="font-bold">{{ meal.strMeal }}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
           <div>
-            <a> :href="meal.strYoutube" target="_blank" class=""Youtube </a>
+            <a :href="meal.strYoutube" target="_blank" class="px-3 py-2 rounded border-2 border-red-600 hover:bg-red-500 hover:text-white"> Youtube </a>
             <router-link to="/"> View</router-link>
         </div>
         </div>
