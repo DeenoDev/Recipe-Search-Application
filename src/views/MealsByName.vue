@@ -13,10 +13,10 @@
         <div v-for="meal of meals" :key="meal.idMeal" class="bg-white shadow rounded-xl">
         <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-3 ">
-          <h3 class="font-semibold">{{ meal.strMeal }}</h3>
+          <h3 class="font-bold">{{ meal.strMeal }}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
-          <div class="px-3 py-3">
-            <a :href="meal.strYoutube" target="_blank">Youtube </a>
+          <div>
+            <a> :href="meal.strYoutube" target="_blank" class=""Youtube </a>
             <router-link to="/"> View</router-link>
         </div>
         </div>
