@@ -13,7 +13,7 @@
         <div v-for="meal of meals" :key="meal.idMeal" class="bg-white shadow rounded-xl">
         <router-link>
           <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
-        </router-link>
+        </router-link to="/">
         <div class="p-3 ">
           <h3 class="font-bold">{{ meal.strMeal }}</h3>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
@@ -29,8 +29,11 @@
 
 <script setup>
 import {computed} from '@vue/reactivity';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import store from '../store';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const keyword = ref('');
 const meals = computed(() => store.state.searchedMeals);
@@ -38,5 +41,9 @@ const meals = computed(() => store.state.searchedMeals);
 function searchMeals(){
   store.dispatch('searchMeals', keyword.value);
 }
+
+onMounted(() => {
+  keyword.value = route.params.name;
+})
 
 </script>
