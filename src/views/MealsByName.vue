@@ -1,5 +1,5 @@
 <template>
-    <div class="p-8">
+    <div class="p-8 pb-0">
        <input 
         type="text" 
         v-model="keyword"
