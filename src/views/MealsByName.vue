@@ -5,7 +5,7 @@
         v-model="keyword"
         class="rounded border-2 border-gray-200 w-full" 
         placeholder="Search for Meals"
-        @change="searchMeals"
+        @change="searchMeals()"
        />   
     </div>
 
@@ -43,7 +43,10 @@ function searchMeals(){
 }
 
 onMounted(() => {
-  keyword.value = route.params.name;
+  keyword.value = route.params.name
+  if (keyword.value){
+    searchMeals()
+  }
 })
 
 </script>
