@@ -44,8 +44,8 @@ function searchMeals(){
 
 onMounted(() => {
   keyword.value = route.params.name
-  if (keyword.value){
-    searchMeals()
+  if (keyword.value) {
+    searchMeals();
   }
 })
 
