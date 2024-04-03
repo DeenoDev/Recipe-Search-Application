@@ -20,7 +20,15 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols2">
-            
+            <div>
+                <h2 class="text-2xl">Ingredients</h2>
+                
+            </div>
+
+            <div>
+                <h2>Measures</h2>
+
+            </div>
         </div>
 
 
