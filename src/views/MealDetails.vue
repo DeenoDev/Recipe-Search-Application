@@ -9,6 +9,12 @@
                 <div>
                     Category: {{ meal.strCategory }}
                 </div>
+                <div>
+                    Category: {{ meal.strArea }}
+                </div>
+                <div>
+                    Category: {{ meal.strTags }}
+                </div>
 
             </div>
         </div>
