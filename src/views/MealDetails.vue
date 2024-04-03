@@ -1,6 +1,6 @@
 <template>
     <div>
-        <pre> {{ meal }}</pre>
+        <img :src="meal.strMealThumb" :alt="meal.strMeal">
     </div>
 
 </template>
@@ -15,11 +15,11 @@ const meal = ref({});
 
 onMounted(() => {
     axiosClient.get(`lookup.php?=${route.params.id}`)
-    .then(({data}) => {
+    .then(({ data }) => {
         debugger;
-        meal.value = data;
-    })
+        meal.value = data.meals[0] || {}
+    });
 
-})
+});
 
 </script>
