@@ -21,7 +21,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols2">
             <div>
-                <h2 class="text-2xl">Ingredients</h2>
+                <h2 class="text-2xl font-semibold mb-3">Ingredients</h2>
                 
             </div>
 
