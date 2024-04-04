@@ -15,14 +15,18 @@
                 <div class="font-bold">
                     Category: {{ meal.strTags }}
                 </div>
-
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols2">
             <div>
                 <h2 class="text-2xl font-semibold mb-3">Ingredients</h2>
-                
+                <ul>
+                    <template v-for="(el, ind) of new Array(20)">
+                        <li v-if="meal[strIngredients]"> </li>
+                    </template>
+
+                </ul>
             </div>
 
             <div>
