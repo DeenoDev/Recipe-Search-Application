@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols2">
+        <div class="grid grid-cols-1 sm:grid-cols2">
             <div>
                 <h2 class="text-2xl font-semibold mb-3">Ingredients</h2>
                 <ul>
@@ -57,7 +57,7 @@ onMounted(() => {
     axiosClient.get(`lookup.php?=${route.params.id}`)
     .then(({ data }) => {
         debugger;
-        meal.value = data.meals[0] || {}
+        meal.value = data.meals[0] || {};
     });
 
 });
