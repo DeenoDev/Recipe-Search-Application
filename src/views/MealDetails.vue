@@ -1,6 +1,5 @@
 <template>
     <div class="w-[800px] mx-auto">
-        
         <pre>{{ meal }}</pre>
         <h1 class="text-5xl font bold mb-5"></h1>
         <img :src="meal.strMealThumb" :alt="meal.strMeal">
@@ -24,20 +23,16 @@
                 <ul>
                     <template v-for="(el, ind) of new Array(20)">
                         <li v-if="meal[`strIngredient${ind + 1}`]">
-                        {{ meal[`strIngredient${ind + 1}`] }}
+                        {{ind + 1 }}. {{ meal[`strIngredient${ind + 1}`] }}
                         </li>
                     </template>
-
                 </ul>
             </div>
 
             <div>
                 <h2>Measures</h2>
-
             </div>
         </div>
-
-
     </div>
 
 </template>
