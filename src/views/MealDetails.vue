@@ -23,7 +23,14 @@
                 <ul>
                     <template v-for="(el, ind) of new Array(20)">
                         <li v-if="meal[`strIngredient${ind + 1}`]">
-                        {{ind + 1 }}. {{ meal[`strIngredient${ind + 1}`] }}
+                        {{ ind + 1 }}. {{ meal[`strIngredient${ind + 1}`] }}
+                        </li>
+                    </template>
+                </ul>
+                <ul>
+                    <template v-for="(el, ind) of new Array(20)">
+                        <li v-if="meal[`strMeasures${ind + 1}`]">
+                        {{ ind + 1 }}. {{ meal[`strMeasures${ind + 1}`] }}
                         </li>
                     </template>
                 </ul>
