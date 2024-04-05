@@ -29,8 +29,8 @@
                 </ul>
                 <ul>
                     <template v-for="(el, ind) of new Array(20)">
-                        <li v-if="meal[`strMeasures${ind + 1}`]">
-                        {{ ind + 1 }}. {{ meal[`strMeasures${ind + 1}`] }}
+                        <li v-if="meal[`strMeasure${ind + 1}`]">
+                        {{ ind + 1 }}. {{ meal[`strMeasure${ind + 1}`] }}
                         </li>
                     </template>
                 </ul>
@@ -47,6 +47,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import axiosClient from '../axiosClient';
+import { useRoute } from 'vue-router';
 
 
 const route = useRoute();
