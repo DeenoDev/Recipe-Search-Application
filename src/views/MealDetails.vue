@@ -4,7 +4,7 @@
         <h1 class="text-5xl font bold mb-5"></h1>
         <img :src="meal.strMealThumb" :alt="meal.strMeal">
         <div>
-            <div grid grid-cols-1 md:grid-cols-3 text-lg py-2>
+            <div class="grid-cols-1 md:grid-cols-3 text-lg py-2">
                 <div class="font-bold">
                     Category: {{ meal.strCategory }}
                 </div>
