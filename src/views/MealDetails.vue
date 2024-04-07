@@ -37,7 +37,7 @@
             </div>
 
             <div>
-                <h2>Measures</h2>
+                <h2 class="text-2xl font-semibold mb-2">Measures</h2>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@ onMounted(() => {
     axiosClient.get(`lookup.php?=${route.params.id}`)
     .then(({ data }) => {
         debugger;
-        meal.value = data.meals[0] || {};
+        meal.value = data.meals[0] || { };
     });
 
 });
