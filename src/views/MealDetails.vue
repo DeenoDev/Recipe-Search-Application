@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[800px] mx-auto">
+    <div class="w-[800px] mx-auto p-8">
         <pre>{{ meal }}</pre>
         <h1 class="text-5xl font bold mb-5"></h1>
         <img :src="meal.strMealThumb" :alt="meal.strMeal">
