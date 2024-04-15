@@ -5,7 +5,7 @@
         v-model="keyword"
         class="rounded border-2 border-gray-200 w-full" 
         placeholder="Search for Meals"
-        @change="searchMeals()"
+        @change="searchMeals"
        />   
     </div>
 
@@ -18,7 +18,7 @@
           <h3 class="font-bold">{{ meal.strMeal }}</h3>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta vitae, illo consectetur adipisci numquam</p>
           <div class="flex items-center justify-between">
-           <YouTubeButton :href="meal.strYoutube" >
+           <YouTubeButton :href="meal.strYoutube">
           Youtube
           </YouTubeButton>
             <!-- <router-link to="/" class="px-3 py-2 rounded border-2 border-purple-600 bg-purple-500 hover:bg-purple-600 text-white transition-colors"> View</router-link> -->
