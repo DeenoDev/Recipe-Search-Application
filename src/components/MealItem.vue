@@ -1,5 +1,5 @@
 <template>
-     <div v-for="meal of meals" :key="meal.idMeal" class="bg-white shadow rounded-xl">
+     <div  :key="meal.idMeal" class="bg-white shadow rounded-xl">
         <router-link :to="{name: 'mealDetails', params: {id: meal.idMeal}}">
           <img :src="meal.strMealThumb" alt="strMeal" class="rounded-t-xl w-full h-48 object-cover">
         </router-link>
