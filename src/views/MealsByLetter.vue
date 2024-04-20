@@ -15,7 +15,11 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+import store from '../store';
+
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
+const meals = computed(() => store.state.mealsByLetter);
 
 </script>
