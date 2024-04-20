@@ -16,4 +16,6 @@
 
 <script setup>
 
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
+
 </script>
