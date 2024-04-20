@@ -16,10 +16,10 @@ export function searchMealsByLetter({ commit }, letter) {
     });
 }
 
-export function searchMeals({ commit }, keyword) {
-    axiosClient.get(`search.php?s=${keyword}`)
+export function searchMealsByIngredient({ commit }, ing) {
+    axiosClient.get(`filter.php?=${ing}`)
     .then(({data}) => {
         // debugger;
-        commit('setSearchedMeals', data.meals);
+        commit('setMealsByIngredients', data.meals);
     });
 }
