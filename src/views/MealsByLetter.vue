@@ -12,13 +12,15 @@
         </div>
     </div>
 
+    <pre>{{ meals }}</pre>
+
 </template>
 
 <script setup>
 import { computed } from 'vue';
 import store from '../store';
 
-
+const route = useRoute();
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 const meals = computed(() => store.state.mealsByLetter);
 
