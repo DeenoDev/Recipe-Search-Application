@@ -7,7 +7,7 @@
       :key="letter"
       class="w-2 h-2 flex items-center justify-center hover:text-orange-500 hover:scale-150 transition-all"
     >
-      {{ letter }}
+      {{ letters }}
     </router-link>
         </div>
     </div>
@@ -22,6 +22,7 @@
 <script setup>
 import { computed, onMounted } from 'vue';
 import store from '../store';
+import MealItem from '../components/MealItem.vue';
 
 const route = useRoute();
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
