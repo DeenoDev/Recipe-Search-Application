@@ -17,11 +17,15 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed, onMounted } from 'vue';
 import store from '../store';
 
 const route = useRoute();
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 const meals = computed(() => store.state.mealsByLetter);
+
+onMounted(() => {
+ store.dispatch('searchMealsByLetter', route.params.letter)
+})
 
 </script>
