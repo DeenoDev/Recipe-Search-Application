@@ -7,7 +7,7 @@
       :key="letter"
       class="w-2 h-2 flex items-center justify-center hover:text-orange-500 hover:scale-150 transition-all"
     >
-      {{ letters }}
+      {{ letter }}
     </router-link>
         </div>
     </div>
