@@ -23,6 +23,7 @@
 import { computed, onMounted } from 'vue';
 import store from '../store';
 import MealItem from '../components/MealItem.vue';
+import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
