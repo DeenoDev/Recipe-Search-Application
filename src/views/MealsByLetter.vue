@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <div class="flex flex-wrap justify-center gap-3 px-8 mb-6">
+  <div class="p-8 pb-0">
+    <h1 class="text-4xl font-bold mb-4 text-orange-500">Meals by Letter</h1>
+  </div>
+  <div class="flex flex-wrap justify-center gap-3 px-8 mb-6">
     <router-link
       :to="{ name: 'byLetter', params: { letter } }"
       v-for="letter of letters"
@@ -9,14 +11,9 @@
     >
       {{ letter }}
     </router-link>
-        </div>
-    </div>
+  </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
-       <MealItem v-for="meal of meals" :key="meal.idMeal"/>
-    </div>
-
-
+  <MealItem :meals="meals" />
 </template>
 
 <script setup>
@@ -31,7 +28,7 @@ const route = useRoute();
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 const meals = computed(() => store.state.mealsByLetter);
 
-watch(route, ()=> {
+watch(route, () => {
   store.dispatch('searchMealsByLetter', route.params.letter)
 })
 
