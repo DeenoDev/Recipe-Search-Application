@@ -1,6 +1,8 @@
 <template>
     <div>
-        <pre>{{ ingredients }}</pre>
+        <div v-for="ingredient of ingredients">
+          <h3> {{ ingredient }} </h3>
+        </div>
     </div>
 
 </template>
@@ -16,7 +18,7 @@ onMounted(() => {
     axiosClient.get('list.php?=list')
     .then(({data}) => {
         debugger;
-        ingredients.value = data;
+        ingredients.value = data.meal;
     })
 })
 
