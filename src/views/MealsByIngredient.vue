@@ -1,6 +1,6 @@
 <template>
     <div>
-        By Ingredients
+        <pre>{{ ingredients }}</pre>
     </div>
 
 </template>
@@ -9,9 +9,15 @@
 import { onMounted } from 'vue';
 import axiosClient from '../axiosClient';
 
+const ingredients = ref([]);
+
 
 onMounted(() => {
     axiosClient.get('list.php?=list')
+    .then(({data}) => {
+        debugger;
+        ingredients.value = data;
+    })
 })
 
 </script>
