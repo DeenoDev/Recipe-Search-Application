@@ -1,7 +1,8 @@
 <template>
     <div>
-        <div v-for="ingredient of ingredients">
-          <h3> {{ ingredient }} </h3>
+        <div v-for="ingredient of ingredients" :key="ingredient.id" class="bg-white rounded p-3 mb-3">
+          <h3 class="text2xl font-bold"> {{ ingredient.strIngredient }} </h3>
+          <pre> {{ ingredient.strDescription }} </pre>
         </div>
     </div>
 
