@@ -6,8 +6,10 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import axiosClient from '../axiosClient';
+import { computed, onMounted } from 'vue';
+import store from '../store';
+
+const meals = computed(() => store.state.mealsByIngredient);
 
 
 
