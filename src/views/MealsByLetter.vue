@@ -13,7 +13,9 @@
     </router-link>
   </div>
 
-  <MealItem :meals="meals" />
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
+    <MealItem :meals="meals" />
+  </div>
 </template>
 
 <script setup>
