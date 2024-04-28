@@ -14,7 +14,7 @@
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
-    <MealItem :meals="meals" />
+    <MealItem v-for="meal of meals" :key="meal.idMeal" :meals="meals" />
   </div>
 </template>
 
