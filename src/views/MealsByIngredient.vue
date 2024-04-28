@@ -14,6 +14,7 @@ const route = useRoute();
 const meals = computed(() => store.state.mealsByIngredient);
 
 onMounted(() => {
+    debugger;
     store.dispatch('searchedMealsByIngredient', route.params.ingredient )
 });
 
