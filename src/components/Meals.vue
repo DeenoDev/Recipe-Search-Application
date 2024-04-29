@@ -11,7 +11,8 @@
 <script setup>
  const {meals} = defineProps({
     meals: {
-        required: true
+        required: true,
+        type: Object
     }
  })
 
