@@ -4,9 +4,7 @@
   </div>
   <div v-if="!meals.length" class="flex justify-center text-gray-600">
     There are no meals
-
   </div>
-
 </template>
 
 <script setup>
@@ -18,7 +16,6 @@ const route = useRoute();
 const meals = computed(() => store.state.mealsByIngredient);
 
 onMounted(() => {
-    debugger;
     store.dispatch('searchedMealsByIngredient', route.params.ingredient )
 });
 
