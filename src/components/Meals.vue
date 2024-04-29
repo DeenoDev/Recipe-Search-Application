@@ -7,3 +7,12 @@
     There are no meals
   </div>
 </template>
+
+<script setup>
+ const {meals} = defineProps({
+    meals: {
+        required: true
+    }
+ })
+
+</script>
