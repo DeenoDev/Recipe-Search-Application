@@ -1,5 +1,5 @@
 <template>
-    <Meals />
+    <Meals :meals="meals" />
 </template>
 
 <script setup>
