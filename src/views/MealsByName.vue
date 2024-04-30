@@ -17,9 +17,8 @@
 import {computed} from '@vue/reactivity';
 import { onMounted, ref } from 'vue';
 import store from '../store';
+import Meals from '../components/Meals.vue';
 import { useRoute } from 'vue-router';
-import YouTubeButton from '../components/YouTubeButton.vue';
-import MealItem from '../components/MealItem.vue';
 import Meals from '../components/Meals.vue';
 
 const route = useRoute();
