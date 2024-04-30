@@ -9,9 +9,7 @@
        />   
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
-       <MealItem v-for="meal of meals" :key="meal.idMeal"/>
-    </div>
+   <Meals :meals="meals" />
 
 </template>
 
@@ -22,6 +20,7 @@ import store from '../store';
 import { useRoute } from 'vue-router';
 import YouTubeButton from '../components/YouTubeButton.vue';
 import MealItem from '../components/MealItem.vue';
+import Meals from '../components/Meals.vue';
 
 const route = useRoute();
 

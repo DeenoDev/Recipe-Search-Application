@@ -13,7 +13,7 @@ const route = useRoute();
 const meals = computed(() => store.state.mealsByIngredient);
 
 onMounted(() => {
-    store.dispatch('searchedMealsByIngredient', route.params.ingredient )
+    store.dispatch('searchedMealsByIngredient', route.params.ingredient)
 });
 
 
