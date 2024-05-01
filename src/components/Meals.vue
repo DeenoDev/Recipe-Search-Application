@@ -15,7 +15,6 @@ import MealItem from './MealItem.vue';
     meals: {
         required: true,
         type: Array,
-        default: () => []
     }
  })
 
