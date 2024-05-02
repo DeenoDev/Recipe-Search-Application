@@ -8,6 +8,8 @@
         </router-link>
     </div>
 
+    <Meals :meals="meals" />
+
 </template>
 
 <script setup>
