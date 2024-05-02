@@ -30,7 +30,7 @@ function searchMeals(){
   if (keyword.value){
   store.dispatch('searchMeals', keyword.value);
   } else {
-    store.commit("searchedMeals", keyword.value);
+    store.commit("setSearchedMeals", []);
   }
 }
 
