@@ -5,7 +5,7 @@
         type="text" 
         v-model="keyword"
         class="rounded border-2 bg-white border-gray-200 w-full mb-3" 
-        placeholder="Search for Ingredients"
+        placeholder="Search for computedIngredients"
         @change="searchMeals"
        />
         
@@ -26,11 +26,11 @@ import axiosClient from '../axiosClient';
 
 const keyword = ref('');
 const ingredients = ref([]);
-const computedIngredients = computed(() => 
-{
+const computedIngredients = computed(() => {
+    if(!computedIngredients) return ingredients;
     return ingredients.value.filter(i => 
      i.strDescription.toLowerCase().includes(keyword.toLowerCase()) ||
-     i.strDescription.toLowerCase().includes(keyword.toLowerCase) ||
+     i.strIngredient.toLowerCase().includes(keyword.toLowerCase())
     
     )
 })
