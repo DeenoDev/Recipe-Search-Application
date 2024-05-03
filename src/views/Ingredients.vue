@@ -26,6 +26,14 @@ import axiosClient from '../axiosClient';
 
 const keyword = ref('');
 const ingredients = ref([]);
+const computedIngredients = computed(() => 
+{
+    return ingredients.value.filter(i => 
+     i.strDescription.toLowerCase().includes(keyword.toLowerCase()) ||
+     i.strDescription.toLowerCase().includes(keyword.toLowerCase) ||
+    
+    )
+})
 
 
 
