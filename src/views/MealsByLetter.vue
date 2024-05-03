@@ -20,7 +20,7 @@
 import { computed, onMounted, watch } from 'vue';
 import store from '../store';
 import { useRoute } from 'vue-router';
-import meal from '../components/Meals.vue';
+import Meals from '../components/Meals.vue';
 
 
 
