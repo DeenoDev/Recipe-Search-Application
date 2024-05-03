@@ -4,8 +4,8 @@
         <input 
         type="text" 
         v-model="keyword"
-        class="rounded border-2 bg-white border-gray-200 w-full" 
-        placeholder="Search for Meals"
+        class="rounded border-2 bg-white border-gray-200 w-full mb-3" 
+        placeholder="Search for Ingredients"
         @change="searchMeals"
        />
         
@@ -24,7 +24,9 @@
 import { onMounted } from 'vue';
 import axiosClient from '../axiosClient';
 
+const keyword = ref('');
 const ingredients = ref([]);
+
 
 
 onMounted(() => {
