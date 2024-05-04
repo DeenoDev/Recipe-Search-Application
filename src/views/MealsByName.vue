@@ -5,7 +5,7 @@
         v-model="keyword"
         class="rounded border-2 bg-white border-gray-200 w-full" 
         placeholder="Search for Meals"
-        @change="searchMeals"
+        @change="searchMeals()"
        />   
     </div>
 
@@ -19,7 +19,6 @@ import { onMounted, ref } from 'vue';
 import store from '../store';
 import Meals from '../components/Meals.vue';
 import { useRoute } from 'vue-router';
-import Meals from '../components/Meals.vue';
 
 const route = useRoute();
 

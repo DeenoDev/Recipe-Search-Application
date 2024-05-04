@@ -28,10 +28,11 @@ const keyword = ref('');
 const ingredients = ref([]);
 const computedIngredients = computed(() => {
     if(!computedIngredients) return ingredients;
-    return ingredients.value.filter(i => 
-     i.strDescription.toLowerCase().includes(keyword.toLowerCase()) ||
-     i.strIngredient.toLowerCase().includes(keyword.toLowerCase())
-    
+    return ingredients.value.filter(i => {
+        debugger;
+     i.strDescription.toLowerCase().includes(keyword.value.toLowerCase()) ||
+     i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase())
+    }
     )
 })
 
