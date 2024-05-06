@@ -7,8 +7,7 @@
         class="rounded border-2 bg-white border-gray-200 w-full mb-3" 
         placeholder="Search for computedIngredients"
         @change="searchMeals"
-       />
-        
+        />
         <router-link :to="{name: 'byIngredient', params: {ingredient: ingredient.strIngredient},}"  v-for="ingredient of ingredients" :key="ingredient.id" 
           class="bg-white rounded p-3 mb-3 shadow">
           <h3 class="block text2xl font-bold mb-2"> {{ ingredient.strIngredient }} </h3>
@@ -27,8 +26,8 @@ import axiosClient from '../axiosClient';
 const keyword = ref('');
 const ingredients = ref([]);
 const computedIngredients = computed(() => {
-    if(!computedIngredients) return ingredients;
-    return ingredients.value.filter((i) => {
+     if(!computedIngredients) return ingredients;
+     return ingredients.value.filter((i) => {
      debugger;
      return ingredients.value.filter((i) => i.strIngredient.toLowerCase(). includes(keyword.value.toLowerCase()))
     }
